@@ -1,0 +1,40 @@
+﻿@model IEnumerable<VisorDatos.BE.BE_FuenteDatos>
+
+@{
+    ViewBag.Title = "Dashboard";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script type="text/javascript" src='@Url.Content("~/Scripts/jquery-1.10.2.min.js")'></script>
+    <link href="@Url.Content("~/Content/bootstrap.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/dashboard.css")" rel="stylesheet" type="text/css" />
+    <title>Index</title>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1>Dashboard</h1>
+    </div>
+
+    <div>
+        @*<h3><a href="/Dashboard/ViewPage1" class="">Resultados</a></h3>*@
+        <h3>
+            @Html.ActionLink("Resultados Modelo", "View_ML")
+        </h3>
+    </div>
+
+    <div class="row">
+
+       
+
+        @foreach (var item in Model)
+        {
+            <h3><a href='@Url.Action("Dashboard", item)' class="">@item.Nombre &raquo;</a></h3>
+        }
+    </div>
+</body>
+</html>

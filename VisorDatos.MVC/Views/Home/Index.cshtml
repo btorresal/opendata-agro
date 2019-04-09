@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Visor Datos</h1>
+    <p class="lead">Visor Datos es un conjunto de herramientas que pemite una visualización adecuada de los datos.</p>
+    <p><a href='@Url.Action("About")' class="btn btn-primary btn-lg">Ver mas &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h1>Parámetros</h1>
+        <p>
+            Configurar las diferentes características de Visor Datos.
+        </p>
+        <p><a class="btn btn-default" href="/Parametros/Index">Ver mas &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h1>Dashboard</h1>
+        <p>
+            Dashboard es una herramienta que facilita la visualización de información
+            a partir de fuentes de datos.
+        </p>
+        <p><a class="btn btn-default" href="/Dashboard/Index">Ver mas &raquo;</a></p>
+    </div>
+</div>

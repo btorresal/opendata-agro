@@ -1,0 +1,75 @@
+﻿@model VisorDatos.BE.MLServiceDTO
+
+@{
+    ViewBag.Title = "View_ML";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script type="text/javascript" src='@Url.Content("~/Scripts/jquery-1.10.2.min.js")'></script>
+    <link href="@Url.Content("~/Content/bootstrap.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/dashboard.css")" rel="stylesheet" type="text/css" />
+    <title>Resultados Modelo Predictivo</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Volver al listado", "Index")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                GENERO
+            </th>
+            <th>
+                INGRESOS ANUALES
+            </th>
+            <th>
+                REGION
+            </th>
+            <th>
+                EDAD
+            </th>
+            <th>
+                COMPRA
+            </th>
+            <th>
+                PROBABILIDAD
+            </th>
+        </tr>
+
+        
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => model.Results.output1.SingleOrDefault().Gender)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Results.output1.SingleOrDefault().YearlyIncome)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Results.output1.SingleOrDefault().Region)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Results.output1.SingleOrDefault().Age)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Results.output1.SingleOrDefault().BikeBuyer)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => model.Results.output1.SingleOrDefault().ScoredProbabilities)
+                </td>
+            </tr>
+      
+
+    </table>
+    <div>
+        
+    </div>
+</body>
+</html>
+
+

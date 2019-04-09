@@ -1,0 +1,71 @@
+﻿@model IEnumerable<VisorDatos.BE.BE_TipoFuenteDatos>
+
+@{
+    ViewBag.Title = "TiposFuentesDatos";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script type="text/javascript" src='@Url.Content("~/Scripts/jquery-1.10.2.min.js")'></script>
+    <link href="@Url.Content("~/Content/bootstrap.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/dashboard.css")" rel="stylesheet" type="text/css" />
+    <title>TiposFuentesDatos</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Crear Tipo de Fuente de Datos", "CrearTipoFuenteDatos")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Usuario)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaCreacion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FechaModificacion)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Usuario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaCreacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaModificacion)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "EditarTipoFuenteDatos", item) |
+                @Html.ActionLink("Detalle", "DetalleTipoFuenteDatos", item) |
+                @Html.ActionLink("Borrar", "BorrarTipoFuenteDatos", item)
+            </td>
+        </tr>
+    }    
+    </table>
+    <div>
+        @Html.ActionLink("Volver al listado de parámetros", "Index")
+    </div>
+</body>
+</html>

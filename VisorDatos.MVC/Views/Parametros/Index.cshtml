@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Parámetros";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script type="text/javascript" src='@Url.Content("~/Scripts/jquery-1.10.2.min.js")'></script>
+    <link href="@Url.Content("~/Content/bootstrap.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/dashboard.css")" rel="stylesheet" type="text/css" />
+    <title>Index</title>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1>Parámetros</h1>
+    </div>
+    <div class="row">
+        <h3><a href='@Url.Action("TiposFuentesDatos")' class="">Tipos de fuentes de datos &raquo;</a></h3>
+        <h3><a href='@Url.Action("FuentesDatos")' class="">Fuentes de datos &raquo;</a></h3>        
+    </div>
+</body>
+</html>

@@ -1,0 +1,78 @@
+﻿@model IEnumerable<VisorDatos.BE.BE_FuenteDatos>
+
+@{
+    ViewBag.Title = "FuentesDatos";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script type="text/javascript" src='@Url.Content("~/Scripts/jquery-1.10.2.min.js")'></script>
+    <link href="@Url.Content("~/Content/bootstrap.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/dashboard.css")" rel="stylesheet" type="text/css" />
+    <title>FuentesDatos</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Crear Fuente de Datos", "CrearFuenteDatos")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                Tipo Fuente
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ruta)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Metodo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Estado)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoFuenteDatos.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descripcion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ruta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Metodo)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estado)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "EditarFuenteDatos", item) |
+                @Html.ActionLink("Detalle", "DetalleFuenteDatos", item) |
+                @Html.ActionLink("Borrar", "BorrarFuenteDatos", item)
+            </td>
+        </tr>
+    }
+    
+    </table>
+    <div>
+        @Html.ActionLink("Volver al listado de parámetros", "Index")
+    </div>
+</body>
+</html>

@@ -1,0 +1,108 @@
+﻿@model VisorDatos.BE.BE_FuenteDatos
+
+@{
+    ViewBag.Title = "BorrarFuenteDatos";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script type="text/javascript" src='@Url.Content("~/Scripts/jquery-1.10.2.min.js")'></script>
+    <link href="@Url.Content("~/Content/bootstrap.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/dashboard.css")" rel="stylesheet" type="text/css" />
+    <title>BorrarFuenteDatos</title>
+</head>
+<body>
+    <h3>Borrar esta fuente de datos?</h3>
+    <div>
+        <h4>Fuente de Datos</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.TipoFuenteDatos.Nombre)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.TipoFuenteDatos.Nombre)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Nombre)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Descripcion)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Descripcion)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Ruta)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Ruta)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Metodo)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Metodo)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Usuario)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Usuario)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.FechaCreacion)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.FechaCreacion)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.FechaModificacion)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.FechaModificacion)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Estado)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Estado)
+            </dd>
+    
+        </dl>
+    
+        @using (Html.BeginForm()) {
+            @Html.AntiForgeryToken()
+    
+            <div class="form-actions no-color">
+                <input type="submit" name="action" value="Borrar" />
+                @Html.ActionLink("Volver al listado de fuentes de datos", "FuentesDatos")
+            </div>
+        }
+    </div>
+</body>
+</html>
