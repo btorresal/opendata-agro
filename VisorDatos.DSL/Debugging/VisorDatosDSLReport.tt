@@ -1,0 +1,16 @@
+﻿<#@ template inherits="Microsoft.VisualStudio.TextTemplating.VSHost.ModelingTextTransformation"#>
+<#@ output extension=".txt" #>
+<#@ VisorDatosDSL processor="VisorDatosDSLDirectiveProcessor" requires="fileName='VisorDatosDSL13.vdat'" #>
+
+Generated material. Generating code in C#.
+
+<#
+  // When you change the DSL Definition, some of the code below may not work.
+
+  foreach (BaseDatos element in this.VisorDatosDSL.BaseDatos)
+  {
+#>
+	<#= element.Name #>
+<#    
+  }
+#>

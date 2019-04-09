@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<visorDatosDSLDiagram dslVersion="1.0.0.0" Id="daf2a946-a8c4-46c0-b734-f80454e03992" absoluteBounds="0, 0, 11, 8.5" name="Sample">
+  <exampleModelMoniker Id="53f86395-4b23-4d9c-aafd-afbb153f3881" />
+  <nestedChildShapes>
+    <exampleShape Id="c06f73b7-2748-493a-9354-36359ad7322f" absoluteBounds="0.5, 1.75, 2, 0.75">
+      <exampleElementMoniker name="/53f86395-4b23-4d9c-aafd-afbb153f3881/ExampleElement1" />
+    </exampleShape>
+    <exampleShape Id="4704c330-0917-466b-9a67-2868dcc9c1c3" absoluteBounds="3, 0.5, 2, 0.75">
+      <exampleElementMoniker name="/53f86395-4b23-4d9c-aafd-afbb153f3881/ExampleElement2" />
+    </exampleShape>
+    <exampleConnector Id="bac17099-7d0f-4acd-9eae-39ebbb006fe2" edgePoints="[(1.5 : 1.75); (1.5 : 0.875); (3 : 0.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="a2360822-6245-47d0-9b2a-7892912bcd22">
+      <nodes>
+        <exampleShapeMoniker Id="c06f73b7-2748-493a-9354-36359ad7322f" />
+        <exampleShapeMoniker Id="4704c330-0917-466b-9a67-2868dcc9c1c3" />
+      </nodes>
+    </exampleConnector>
+  </nestedChildShapes>
+</visorDatosDSLDiagram>

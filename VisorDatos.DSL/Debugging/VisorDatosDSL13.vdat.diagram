@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<visorDatosDSLDiagram dslVersion="1.0.0.0" Id="b5952692-0519-4911-b66d-a7595bd848dc" absoluteBounds="0, 0, 11, 8.5" name="VisorDatosDSL13">
+  <fuentesDeDatosModelMoniker Id="60951b20-ee02-45dd-8e3d-8089c368dbfc" />
+  <nestedChildShapes>
+    <fuenteDeDatosShape Id="06ccbbbb-88b0-405e-8c54-f0ebdc7286b0" absoluteBounds="3.625, 1.75, 2, 0.75">
+      <fuenteDeDatosPrimariaMoniker nombre="/60951b20-ee02-45dd-8e3d-8089c368dbfc/Nombre Fuente de Datos1" />
+    </fuenteDeDatosShape>
+    <formatoDeSalidaShape Id="4d925b5a-312a-4854-bfd2-cf4ac821f298" absoluteBounds="1.625, 3.75, 2, 1">
+      <tipoFormatoSalidaWebMoniker Id="312c001f-9b7a-41d9-ae72-42ad4e4e0142" />
+    </formatoDeSalidaShape>
+    <webServiceShape Id="4d340f81-ed23-44c8-a3ef-136b25a4813b" absoluteBounds="4.125, 3.75, 1.5, 1">
+      <webServiceMoniker Id="0752bb3a-b36c-4e2f-b9e8-c27014915b3e" />
+    </webServiceShape>
+    <baseDatosShape Id="6edf04b4-58f6-4426-a748-4829e92afb81" absoluteBounds="6.375, 3.75, 1.5, 1">
+      <baseDatosMoniker Id="70d338a8-281d-47e6-b18e-bcfc58596401" />
+    </baseDatosShape>
+    <conectorFuente_FormatoSalida Id="8d4f9c60-81f5-4df5-aa01-ac365c586e64" edgePoints="[(3.625 : 2.125); (2.59375 : 2.125); (2.59375 : 3.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <fuenteDeDatosPrimariaReferencesFormatosDeSalidaMoniker Id="281570d1-8ebf-47f6-81e7-2c99d6111239" />
+      <nodes>
+        <fuenteDeDatosShapeMoniker Id="06ccbbbb-88b0-405e-8c54-f0ebdc7286b0" />
+        <formatoDeSalidaShapeMoniker Id="4d925b5a-312a-4854-bfd2-cf4ac821f298" />
+      </nodes>
+    </conectorFuente_FormatoSalida>
+    <conectorFuente_WebService Id="a1d9cbf7-2462-4a86-a550-397caa651f70" edgePoints="[(4.875 : 2.5); (4.875 : 3.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
+      <fuenteDeDatosPrimariaReferencesWebServiceMoniker Id="9954c48d-eab9-4fb2-a88d-207d5a065bad" />
+      <nodes>
+        <fuenteDeDatosShapeMoniker Id="06ccbbbb-88b0-405e-8c54-f0ebdc7286b0" />
+        <webServiceShapeMoniker Id="4d340f81-ed23-44c8-a3ef-136b25a4813b" />
+      </nodes>
+    </conectorFuente_WebService>
+    <conectorFuente_BaseDatos Id="bb159374-177c-459a-8853-c3a90969ee79" edgePoints="[(5.625 : 2.125); (7.125 : 2.125); (7.125 : 3.75)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <fuenteDeDatosPrimariaReferencesBaseDatosMoniker Id="295c5f0d-4989-40a5-a7c2-969ebd3c5b94" />
+      <nodes>
+        <fuenteDeDatosShapeMoniker Id="06ccbbbb-88b0-405e-8c54-f0ebdc7286b0" />
+        <baseDatosShapeMoniker Id="6edf04b4-58f6-4426-a748-4829e92afb81" />
+      </nodes>
+    </conectorFuente_BaseDatos>
+    <tipoDeChartShape Id="40dbff0e-1867-4dce-a53a-963f29b61e27" absoluteBounds="3.875, 0.5, 1.5, 1">
+      <tipoDeChartMoniker Id="dec9ea37-2ed9-4967-a38f-ba2e0e9fe807" />
+    </tipoDeChartShape>
+    <conectorFuente_TipoChart Id="10abe8f0-24bf-44f1-bf0b-f5774b4ef3bb" edgePoints="[(4.625 : 1.75); (4.625 : 1.5)]" manuallyRouted="true" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <fuenteDeDatosPrimariaReferencesTiposDeChartMoniker Id="2de55311-b925-472e-a3e1-0b1d8542b508" />
+      <nodes>
+        <fuenteDeDatosShapeMoniker Id="06ccbbbb-88b0-405e-8c54-f0ebdc7286b0" />
+        <tipoDeChartShapeMoniker Id="40dbff0e-1867-4dce-a53a-963f29b61e27" />
+      </nodes>
+    </conectorFuente_TipoChart>
+  </nestedChildShapes>
+</visorDatosDSLDiagram>

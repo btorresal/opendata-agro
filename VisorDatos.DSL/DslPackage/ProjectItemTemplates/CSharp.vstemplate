@@ -1,0 +1,17 @@
+﻿<!--DSL Tools Language Template-->
+<VSTemplate Version="3.0.0" Type="Item" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<TemplateData>
+		<TemplateID>{85e289a5-9a03-4262-a13b-cccef645a59b}</TemplateID>
+		<Name Package="{eac8a017-502c-4d77-a475-4c575dac18a5}" ID="103"/>
+		<Description Package="{eac8a017-502c-4d77-a475-4c575dac18a5}" ID="102"/>
+		<Icon Package="{eac8a017-502c-4d77-a475-4c575dac18a5}" ID="201" />
+		<ProjectType>CSharp</ProjectType>
+		<SortOrder>360</SortOrder>
+		<DefaultName>VisorDatosDSL.vdat</DefaultName>
+	</TemplateData>
+	<TemplateContent>
+		<ProjectItem TargetFileName="$fileinputname$.vdat">vdat.vdat</ProjectItem>
+		<ProjectItem TargetFileName="$fileinputname$.vdat.diagram">vdat.diagram</ProjectItem>
+	</TemplateContent>
+</VSTemplate>
+

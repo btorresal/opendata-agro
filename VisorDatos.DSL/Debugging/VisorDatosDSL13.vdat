@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<fuentesDeDatosModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="60951b20-ee02-45dd-8e3d-8089c368dbfc" xmlns="http://schemas.microsoft.com/dsltools/VisorDatosDSL">
+  <fuentesDeDatos>
+    <fuenteDeDatosPrimaria Id="a12c869e-5868-4d4a-a076-c1b12b92f636" nombre="Nombre Fuente de Datos1">
+      <formatosDeSalida>
+        <fuenteDeDatosPrimariaReferencesFormatosDeSalida Id="281570d1-8ebf-47f6-81e7-2c99d6111239">
+          <tipoFormatoSalidaWebMoniker Id="312c001f-9b7a-41d9-ae72-42ad4e4e0142" />
+        </fuenteDeDatosPrimariaReferencesFormatosDeSalida>
+      </formatosDeSalida>
+      <tiposDeChart>
+        <fuenteDeDatosPrimariaReferencesTiposDeChart Id="2de55311-b925-472e-a3e1-0b1d8542b508">
+          <tipoDeChartMoniker Id="dec9ea37-2ed9-4967-a38f-ba2e0e9fe807" />
+        </fuenteDeDatosPrimariaReferencesTiposDeChart>
+      </tiposDeChart>
+      <webService>
+        <fuenteDeDatosPrimariaReferencesWebService Id="9954c48d-eab9-4fb2-a88d-207d5a065bad">
+          <webServiceMoniker Id="0752bb3a-b36c-4e2f-b9e8-c27014915b3e" />
+        </fuenteDeDatosPrimariaReferencesWebService>
+      </webService>
+      <baseDatos>
+        <fuenteDeDatosPrimariaReferencesBaseDatos Id="295c5f0d-4989-40a5-a7c2-969ebd3c5b94">
+          <baseDatosMoniker Id="70d338a8-281d-47e6-b18e-bcfc58596401" />
+        </fuenteDeDatosPrimariaReferencesBaseDatos>
+      </baseDatos>
+    </fuenteDeDatosPrimaria>
+  </fuentesDeDatos>
+  <formatosDeSalida>
+    <fuentesDeDatosModelHasFormatosDeSalida Id="7f155be2-c406-45b0-9e71-6748a145c6b5">
+      <tipoFormatoSalidaWeb Id="312c001f-9b7a-41d9-ae72-42ad4e4e0142" nombre="Nombre Formato de Salida1" />
+    </fuentesDeDatosModelHasFormatosDeSalida>
+  </formatosDeSalida>
+  <tiposDeChart>
+    <fuentesDeDatosModelHasTiposDeChart Id="dfaea621-ffde-47c8-9b86-52292af018b2">
+      <tipoDeChart Id="dec9ea37-2ed9-4967-a38f-ba2e0e9fe807" nombre="Nombre Tipo de Chart1" />
+    </fuentesDeDatosModelHasTiposDeChart>
+  </tiposDeChart>
+  <webService>
+    <fuentesDeDatosModelHasWebService Id="27af16ed-d49c-4a18-8373-f7ac6f53fa8b">
+      <webService Id="0752bb3a-b36c-4e2f-b9e8-c27014915b3e" nombre="Web Service1" />
+    </fuentesDeDatosModelHasWebService>
+  </webService>
+  <baseDatos>
+    <fuentesDeDatosModelHasBaseDatos Id="8ffe290a-3eae-444d-a8f7-c0182890f915">
+      <baseDatos Id="70d338a8-281d-47e6-b18e-bcfc58596401" nombre="Base de Datos1" />
+    </fuentesDeDatosModelHasBaseDatos>
+  </baseDatos>
+</fuentesDeDatosModel>
